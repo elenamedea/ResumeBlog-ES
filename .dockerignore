@@ -6,5 +6,6 @@ __pycache__
 .env
 .env.example
 docker-compose*.yml
+render.yaml
 README.md
 LICENSE
