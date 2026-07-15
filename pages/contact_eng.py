@@ -26,14 +26,11 @@ col_c1, col_c2 = st.columns([0.5, 0.5], gap="medium")
 # First column of contact details
 with col_c1:
     contact_1 = f"""
-        **{contact["email"]}**  
-        {contact["details"]["email"]}  
+        **{contact["email"]}**<br>
+        {contact["details"]["email"]}
 
-        **{contact["phone"]}**  
-        {contact["details"]["phone"]}  
-
-        **{contact["address"]}**  
-        {contact["details"]["address"]}  
+        **{contact["address"]}**<br>
+        {contact["details"]["address"]}
     """
     md(contact_1)
 

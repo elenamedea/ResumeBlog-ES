@@ -18,7 +18,7 @@ st.set_page_config(
 # work without a Logfire account.
 @st.cache_resource
 def configure_logfire():
-    logfire.configure(send_to_logfire = "if-token-present", service_name = "resumeblog")
+    logfire.configure(send_to_logfire = "if-token-present", service_name = "resumeblog-es")
 
 configure_logfire()
 
