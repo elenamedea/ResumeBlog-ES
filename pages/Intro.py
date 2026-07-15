@@ -2,7 +2,7 @@ import streamlit as st
 
 from utils import print_markdown as md
 
-from utils import badge_name, latest_project_link
+from utils import badge_name, latest_projects
 
 # Title
 st.title("🪴 Welcome to my resume website 🪴")
@@ -28,15 +28,16 @@ col_extra1, col_extra2 = st.columns([0.5, 0.5], gap = "medium")
 
 # First column of extras
 with col_extra1:
-    # Latest project section
-    st.subheader("🚀 Latest project")
-    md("""I am always excited developing new coding projects.  
-                    Check out my **latest one** here:""")
-    st.link_button("👉 View project", latest_project_link, type = "primary")
+    # Latest projects section
+    st.subheader("🚀 Latest projects")
+    md("""I am always excited developing new coding projects.
+                    Check out my **latest ones** here:""")
+    for project_name, project_link in latest_projects.items():
+        st.link_button(project_name, project_link, type = "primary")
 # Second column of extras
 with col_extra2:
     # Fun fallback
     st.subheader("♟️ Play a game of chess ♟️")
     md("In case the site is under maintenance, why not enjoy a quick game of chess?")
 
-    st.link_button("⏱️ Start Game", "https://www.chess.com/play", type = "primary")
+    st.link_button("Start game", "https://www.chess.com/play", type = "primary")
