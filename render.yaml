@@ -1,0 +1,13 @@
+# Render blueprint — Docker web service on the free plan.
+# Render builds the repo's Dockerfile and auto-deploys every push to main.
+services:
+  - type: web
+    name: resumeblog-es
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /_stcore/health
+    envVars:
+      # The container serves Streamlit on 7860; tell Render where to route
+      - key: PORT
+        value: 7860

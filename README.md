@@ -1,20 +1,8 @@
----
-title: Eleni Syngelaki, Dr.rer.nat.
-emoji: 🌸
-colorFrom: red
-colorTo: pink
-sdk: docker
-app_port: 7860
-pinned: true
----
-
 # Eleni Syngelaki, Dr.rer.nat. — CV & Blog
 
-🌸 Bilingual (English/German) CV and contact site, built as a Streamlit multipage app and served from a Docker image on a [Hugging Face Space](https://huggingface.co/spaces). Every push to `main` rebuilds and redeploys the site via GitHub Actions.
+🌸 Bilingual (English/German) CV and contact site, built as a Streamlit multipage app and served from a Docker image on [Render](https://render.com). Every push to `main` rebuilds and redeploys the site.
 
 Built from my own [ResumeBlog template](https://github.com/elenamedea/ResumeBlog) — fork that repo if you want a site like this one.
-
-> The YAML block at the top of this file is the [Space configuration](https://huggingface.co/docs/hub/spaces-config-reference); GitHub renders it as a small table, so it does not hurt the repo's README.
 
 ---
 
@@ -23,7 +11,7 @@ Built from my own [ResumeBlog template](https://github.com/elenamedea/ResumeBlog
 - **App:** Streamlit multipage (EN/DE), content in `utils/context_*.py`
 - **Environment:** [uv](https://docs.astral.sh/uv/) — `pyproject.toml` + `uv.lock` are the source of truth
 - **Container:** multi-stage Dockerfile, non-root, port 7860
-- **Deploy:** GitHub Actions → Hugging Face Docker Space
+- **Deploy:** Render Docker web service, defined in [`render.yaml`](render.yaml), auto-deploy on push to `main`
 - **Observability:** [Pydantic Logfire](https://logfire.pydantic.dev/) page-view tracing (active only when `LOGFIRE_TOKEN` is set)
 
 ## Local development
@@ -36,4 +24,6 @@ Copy `.env.example` to `.env` for optional settings; `.env` stays untracked.
 
 ## Deployment
 
-The [sync workflow](.github/workflows/sync-to-hf.yml) force-pushes `main` to the Space configured via the repo's Actions settings (secret `HF_TOKEN`, variables `HF_USERNAME` and `HF_SPACE_NAME`); the Space builds the Dockerfile and serves on port 7860.
+[`render.yaml`](render.yaml) defines the service as a blueprint: Docker runtime, free plan, health-checked on `/_stcore/health`. Render builds the repo's Dockerfile and redeploys on every push to `main`. The optional `LOGFIRE_TOKEN` environment variable is set in the Render dashboard, never in the repo.
+
+Note: free-plan instances spin down after ~15 minutes without traffic; the next visitor triggers a cold start (~30–60 s).
