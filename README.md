@@ -1,5 +1,7 @@
 # Eleni Syngelaki, Dr.rer.nat. — CV & Blog
 
+**Live site: [resumeblog-es.onrender.com](https://resumeblog-es.onrender.com/)**
+
 🌸 Bilingual (English/German) CV and contact site, built as a Streamlit multipage app and served from a Docker image on [Render](https://render.com). Every push to `main` rebuilds and redeploys the site.
 
 Built from my own [ResumeBlog template](https://github.com/elenamedea/ResumeBlog) — fork that repo if you want a site like this one.
