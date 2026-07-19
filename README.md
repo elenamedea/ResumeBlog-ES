@@ -1,25 +1,25 @@
-# Eleni Syngelaki, Dr.rer.nat. — CV & Blog
+# Eleni Syngelaki, Dr.rer.nat. - CV & Blog
 
 **Live site: [resumeblog-es.onrender.com](https://resumeblog-es.onrender.com/)**
 
 🌸 Bilingual (English/German) CV and contact site, built as a Streamlit multipage app and served from a Docker image on [Render](https://render.com). Every push to `main` rebuilds and redeploys the site.
 
-Built from my own [ResumeBlog template](https://github.com/elenamedea/ResumeBlog) — fork that repo if you want a site like this one.
+Built from my own [ResumeBlog template](https://github.com/elenamedea/ResumeBlog) - fork that repo if you want a site like this one.
 
 ---
 
 ## Stack
 
 - **App:** Streamlit multipage (EN/DE), content in `utils/context_*.py`
-- **Environment:** [uv](https://docs.astral.sh/uv/) — `pyproject.toml` + `uv.lock` are the source of truth
+- **Environment:** [uv](https://docs.astral.sh/uv/) - `pyproject.toml` + `uv.lock` are the source of truth
 - **Container:** multi-stage Dockerfile, non-root, port 7860
 - **Deploy:** Render Docker web service, defined in [`render.yaml`](render.yaml), auto-deploy on push to `main`
 - **Observability:** [Pydantic Logfire](https://logfire.pydantic.dev/) page-view tracing (active only when `LOGFIRE_TOKEN` is set)
 
 ## Local development
 
-- `uv sync` then `uv run streamlit run app.py` — http://localhost:8501
-- Docker (dev, hot reload): `docker compose -f docker-compose.dev.yml up --build` — http://localhost:7860
+- `uv sync` then `uv run streamlit run app.py` - http://localhost:8501
+- Docker (dev, hot reload): `docker compose -f docker-compose.dev.yml up --build` - http://localhost:7860
 - Docker (production parity): `docker compose -f docker-compose.prod.yml up --build -d`
 
 Copy `.env.example` to `.env` for optional settings; `.env` stays untracked.
