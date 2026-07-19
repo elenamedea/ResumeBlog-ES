@@ -7,6 +7,7 @@ from .title_caption_links import title_caption_links
 
 # To be imported to app.py
 from .context_strings import app_title, app_icon
+from .themes import LIGHT, DARK, css_variables
 # To be imported to Intro.py
 from .context_strings import badge_name, latest_projects
 # To be imported to contact python scripts
