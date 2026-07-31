@@ -1,7 +1,7 @@
 # Profile
 
 profile_eng = """Data engineer who works across the full data lifecycle; from how data gets collected and what it means, to whether it can be trusted. With a research background and production experience in data engineering and AI automation, I bring rigour to messy real-world data problems and a track record of turning raw, heterogeneous inputs into reliable, governed, and actionable outputs."""
-profile_de = """Als Dateningenieurin, decke ich den gesamten Datenlebenszyklus ab: von der Erfassung, über die Verifikation, und Analyse, bis hin zur Archivierung. Mit meinem wissenschaftlichen Hintergrund und praktischer Erfahrung in den Bereichen Datenengineering und KI-Automatisierung löse ich auch äußerst komplexe Datenprobleme mit hoher Präzision und kann auf eine Erfolgsbilanz bei der Umwandlung von heterogenen Rohdaten in zuverlässige, kontrollierte, umsetzbare Arbeitsergebnisse zurückblicken."""
+profile_de = """Als Dateningenieurin, decke ich den gesamten Datenlebenszyklus ab: von der Erfassung, über die Validierung, und Analyse, bis hin zur Archivierung. Mit meinem wissenschaftlichen Hintergrund und praktischer Erfahrung in den Bereichen Datenengineering und KI-gestützter Automatisierung löse ich auch äußerst komplexe Datenprobleme mit hoher Präzision. Ich kann auf nachweisliche Erfahrung bei der Umwandlung heterogener Rohdaten in zuverlässige, qualitätsgesicherte und umsetzbare Arbeitsergebnisse zurückblicken."""
 
 profile_dict = {
     "English": profile_eng,
@@ -108,10 +108,10 @@ work_experience_de = {
         ":primary-background[*Python • Power BI • Mistral AI • n8n • Airtable • Git • Bash*]",
        """
         - Umsetzung von mehr als zehn Projekten in den Bereichen CO₂-Bilanzierung, Datenarchitektur und Projektrealisierung, technische Leitung sowie Projektmanagement des Teams
-        - Zwei Dekarbonisierungsprojekte, eins davon für einen großen europäischen Kunden (und Standorten weltweit), wurden bis zur Produktionsreife gebracht, hier wurden die technischen Entscheidungen stets anhand der tatsächlichen Geschäftsziele ausgerichtet, und so der schleichende Umfangszuwachs der Projekte begrenzt
+        - Zwei Dekarbonisierungsprojekte, eines davon für einen großen europäischen Kunden mit Standorten weltweit, wurden bis zur Produktionsreife gebracht. Dabei wurden die technischen Entscheidungen stets anhand der tatsächlichen Geschäftsziele ausgerichtet, und so der schleichende Umfangszuwachs der Projekte begrenzt
         - Re-design von Power BI-Berichtsworkflows: Bereitstellung der Dashboards zwei Monate vor dem geplanten Abgabetermin
-        - Erstellung von Datenpipelines aus verschiedenen Quellen (APIs, SharePoint, Dokumente) zur Erfassung, Bereinigung, Validierung und Strukturierung heterogener Datensätze; Lösung von mehr als 95 % der Datenbearbeitungsprobleme ohne weitere Kunden oder interne Nachfragen
-        - Leitung der KI-Strategie des Teams, angefangen bei der Befragung des Teams zum Verständnis der tatsächlichen Arbeitsabläufe über die Auswahl der einzelnen Tools bis hin zur Erstellung einer unternehmensweiten Roadmap und der Umsetzung konkreter Lösungen mit: Agenten, Automatisierungen und integrierten Arbeitsabläufen
+        - Erstellung von Datenpipelines aus verschiedenen Quellen (APIs, SharePoint, Dokumente) zur Erfassung, Bereinigung, Validierung und Strukturierung heterogener Datensätze; Lösung von über 95 % der Datenbearbeitungsprobleme ohne zusätzlichen Abstimmungsbedarf mit Kunden oder internen Teams
+        - Leitung der KI-Strategie des Teams, von der Analyse der tatsächlichen Arbeitsabläufe durch Teaminterviews über die Auswahl geeigneter Tools bis hin zur Entwicklung einer unternehmensweiten Roadmap sowie der Umsetzung konkreter Lösungen mit: Agenten, Automatisierungen und integrierten Arbeitsabläufen
         - Entwicklung einer Mistral-KI-Agenten-Suite, die in n8n-Workflows integriert ist und den Zeitaufwand des Vertriebsteams für die Lead-Generierung, die CRM-Anreicherung und das Kontakt-Scoring um ca. 50 % reduziert hat; dabei wurden manuelle Schritte vollständig eliminiert und nicht nur beschleunigt
     """,
     ],
@@ -133,7 +133,7 @@ work_experience_de = {
         "Berlin, Deutschland",
         ":primary-background[*Python • SQL • PostgreSQL • Streamlit • Docker • Git*]",
        """
-        - Reduzierung der Datenfehler um 60 % bereits in der ersten Charge durch Einführung eines Validierungsrahmens mit „Human-in-the-Loop“-Prüfungen; die Fehlerquote sank weiter, je mehr das Team das System einsetzte
+        - Reduzierung der Datenfehler um 60 % bereits im ersten Durchlauf, durch Einführung eines Validierungsrahmens mit „Human-in-the-Loop“-Prüfungen; die Fehlerquote sank mit zunehmender Nutzung des Systems weiter
         - Entwurf und Bereitstellung einer ETL-Pipeline für eine Web-App zur Gegenabbildung; zwei räumliche Quellen wurden in analysefähige Datensätze umgewandelt und in eine in der Cloud gehostete PostgreSQL-Datenbank geladen
         - Modellierung des relationalen Schemas und der Datenverträge, sodass Backend- und Anwendungsschicht während des gesamten Projekts synchron blieben
     """,
