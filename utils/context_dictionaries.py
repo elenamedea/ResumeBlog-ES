@@ -1,6 +1,6 @@
 # Profile
 
-profile_eng = """Data engineer who works across the full data lifecycle; from how data gets collected and what it means, to whether it can be trusted. With a research background and production experience in data engineering and AI automation, I bring rigour to messy real-world data problems and a track record of turning raw, heterogeneous inputs into reliable, governed, and actionable outputs."""
+profile_eng = """Data engineer working across the full data lifecycle; from how data gets collected and what it means, to whether it can be trusted. With a research background and production experience in data engineering and AI automation, I bring rigour to messy real-world data problems and a track record of turning raw, heterogeneous inputs into reliable, governed, and actionable outputs."""
 profile_de = """Als Dateningenieurin, decke ich den gesamten Datenlebenszyklus ab: von der Erfassung, über die Validierung, und Analyse, bis hin zur Archivierung. Mit meinem wissenschaftlichen Hintergrund und praktischer Erfahrung in den Bereichen Datenengineering und KI-gestützter Automatisierung löse ich auch äußerst komplexe Datenprobleme mit hoher Präzision. Ich kann auf nachweisliche Erfahrung bei der Umwandlung heterogener Rohdaten in zuverlässige, qualitätsgesicherte und umsetzbare Arbeitsergebnisse zurückblicken."""
 
 profile_dict = {
@@ -50,21 +50,31 @@ contact_dict = {
 work_experience_keys = ["title", "company", "period", "location", "keywords", "description"]
 work_experience_eng = {
     "work_experience_1": [
-        "Environmental Data Engineer",
+        "Data Lead Engineer",
         "eolos",
-        "07/2024 – present",
+        "09/2026 – present",
         "Berlin, Germany",
-        ":primary-background[*Python • Power BI • Mistral AI • n8n • Airtable • Git • Bash*]",
+        "",
        """
-        - Delivered 10+ client projects in Carbon Accounting and Data Architecture, acting as both technical lead and project manager for a 3-person team per engagement
-        - Drove two Decarbonisation projects to production, one for a major European Enterprise with sites worldwide, by keeping technical decisions tied to actual business goals, to avoid scope drift
-        - Redesigned Power BI reporting workflows, shipping dashboards two months ahead of schedule
-        - Built multi-source data pipelines (APIs, SharePoint, documents) to ingest, clean, validate, and structure heterogeneous datasets; resolved >95% of client data issues without escalation
-        - Owned team's end-to-end AI strategy, from surveying the team to understand real workflows, through tool selection, to delivering a company-wide roadmap and working implementations: agents, automations, and integrated workflows
-        - Built a Mistral AI agent suite integrated with n8n workflows that cut the commercial team's time on lead generation, CRM enrichment, and contact scoring by ~50%; whole manual steps went away, not just got faster
+        - Lead the data team and own its AI architecture and roadmap, setting technical direction for client projects from scoping to production
     """,
     ],
     "work_experience_2": [
+        "Environmental Data Engineer",
+        "eolos",
+        "07/2024 – 08/2026",
+        "Berlin, Germany",
+        ":primary-background[*Python • Power BI • Mistral AI • n8n • Airtable • Git • Bash*]",
+       """
+        - Delivered 10+ Carbon Accounting and Data Architecture projects as technical lead and PM for 3-person teams
+        - Drove two Decarbonisation projects to production, one for a major European Enterprise with sites worldwide, by keeping technical decisions tied to actual business goals, to avoid scope drift
+        - Redesigned Power BI reporting, shipping dashboards two months ahead of schedule
+        - Built multi-source data pipelines (APIs, SharePoint, documents) to ingest, clean, validate, and structure heterogeneous datasets; resolved >95% of client data issues without escalation
+        - Owned team's end-to-end AI strategy, from team survey, through tool selection, to a company-wide roadmap with working agents and automations
+        - Built a Mistral AI agent suite in n8n that cut the commercial team's time on lead generation, CRM enrichment, and contact scoring by ~50%
+    """,
+    ],
+    "work_experience_3": [
         "Research Consultant",
         "Unreal Estate GmbH",
         "03/2024 – 04/2024",
@@ -75,7 +85,7 @@ work_experience_eng = {
         - Deployed an open-source Streamlit EDA app, enabling three non-technical stakeholders to self-serve visual insights
     """,
     ],
-    "work_experience_3": [
+    "work_experience_4": [
         "Data Engineering and Science Intern",
         "Spoty Labs",
         "05/2023 – 11/2023",
@@ -87,7 +97,7 @@ work_experience_eng = {
         - Modelled the relational schema and data contracts so the backend and application layers stayed in sync throughout the project
     """,
     ],
-    "work_experience_4": [
+    "work_experience_5": [
         "Research associate",
         "Georg-August-Universität Göttingen",
         "02/2017 – 09/2021",
@@ -101,9 +111,19 @@ work_experience_eng = {
 }
 work_experience_de = {
     "work_experience_1": [
+        "Data Lead Engineer",
+        "eolos",
+        "09/2026 – heute",
+        "Berlin, Deutschland",
+        "",
+       """
+        - Leitung des Datenteams sowie Verantwortung für KI-Architektur und -Roadmap; technische Ausrichtung der Kundenprojekte von der Konzeption bis zur Produktion
+    """,
+    ],
+    "work_experience_2": [
         "Environmental Data Engineer",
         "eolos",
-        "07/2024 – heute",
+        "07/2024 – 08/2026",
         "Berlin, Deutschland",
         ":primary-background[*Python • Power BI • Mistral AI • n8n • Airtable • Git • Bash*]",
        """
@@ -115,7 +135,7 @@ work_experience_de = {
         - Entwicklung einer Mistral-KI-Agenten-Suite, die in n8n-Workflows integriert ist und den Zeitaufwand des Vertriebsteams für die Lead-Generierung, die CRM-Anreicherung und das Kontakt-Scoring um ca. 50 % reduziert hat; dabei wurden manuelle Schritte vollständig eliminiert und nicht nur beschleunigt
     """,
     ],
-    "work_experience_2": [
+    "work_experience_3": [
         "Research Consultant",
         "Unreal Estate GmbH",
         "03/2024 – 04/2024",
@@ -126,7 +146,7 @@ work_experience_de = {
         - Bereitstellung einer Open-Source-EDA-App basierend auf Streamlit, die es den drei Stakeholdern ermöglicht Zusammenhänge anhand von Datenvisualisierungen selbständig zu analysieren
     """,
     ],
-    "work_experience_3": [
+    "work_experience_4": [
         "Data Engineering and Science Intern",
         "Spoty Labs",
         "05/2023 – 11/2023",
@@ -138,7 +158,7 @@ work_experience_de = {
         - Modellierung des relationalen Schemas und der Datenverträge, sodass Backend- und Anwendungsschicht während des gesamten Projekts synchron blieben
     """,
     ],
-    "work_experience_4": [
+    "work_experience_5": [
         "Research associate",
         "Georg-August-Universität Göttingen",
         "02/2017 – 09/2021",
@@ -217,13 +237,13 @@ education_de = {
         "Berlin, Deutschland",
     ],
     "education_2": [
-        "Biology | Dr. rer. nat.",
+        "Biologie | Dr. rer. nat.",
         "Georg-August-Universität Göttingen",
         "02/2017 – 12/2021",
         "Göttingen, Deutschland",
     ],
     "education_3": [
-        "Biology | Diplom",
+        "Biologie | Diplom",
         "Aristotle University of Thessaloniki",
         "09/2009 – 07/2015",
         "Thessaloniki, Griechenland",
