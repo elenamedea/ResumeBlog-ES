@@ -40,7 +40,7 @@ header("Work experience")
 col_we1, col_we2 = st.columns([0.5, 0.5], gap = "medium")
 ## First column of the work experience
 with col_we1:
-    ### 1. eolos
+    ### 1. eolos: Data Lead Engineer
     we(
         experience["work_experience_1"]["title"],
         experience["work_experience_1"]["company"],
@@ -49,8 +49,7 @@ with col_we1:
         experience["work_experience_1"]["keywords"],
         experience["work_experience_1"]["description"],
     )
-    st.divider()
-    ### 2. Unreal Estate GmbH
+    ### 2. eolos: Environmental Data Engineer (same employer, no divider)
     we(
         experience["work_experience_2"]["title"],
         experience["work_experience_2"]["company"],
@@ -61,7 +60,7 @@ with col_we1:
     )
 ## Second column of the work experience
 with col_we2:
-    ### 3. Spoty Labs
+    ### 3. Unreal Estate GmbH
     we(
         experience["work_experience_3"]["title"],
         experience["work_experience_3"]["company"],
@@ -71,7 +70,7 @@ with col_we2:
         experience["work_experience_3"]["description"],
     )
     st.divider()
-    ### 4. Georg-August-Universität Göttingen
+    ### 4. Spoty Labs
     we(
         experience["work_experience_4"]["title"],
         experience["work_experience_4"]["company"],
@@ -79,6 +78,16 @@ with col_we2:
         experience["work_experience_4"]["location"],
         experience["work_experience_4"]["keywords"],
         experience["work_experience_4"]["description"],
+    )
+    st.divider()
+    ### 5. Georg-August-Universität Göttingen
+    we(
+        experience["work_experience_5"]["title"],
+        experience["work_experience_5"]["company"],
+        experience["work_experience_5"]["period"],
+        experience["work_experience_5"]["location"],
+        experience["work_experience_5"]["keywords"],
+        experience["work_experience_5"]["description"],
     )
 
 # Skills section
