@@ -1,6 +1,6 @@
 # Production parity: immutable image, no source mounts.
 # Usage: docker compose -f docker-compose.prod.yml up --build -d
-# Note: the reference deployment is a Hugging Face Docker Space, which
+# Note: the reference deployment is a Render web service (render.yaml), which
 # builds the Dockerfile directly; this file is for self-hosting parity tests.
 services:
   resumeblog:

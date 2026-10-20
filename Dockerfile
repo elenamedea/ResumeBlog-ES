@@ -1,9 +1,9 @@
-# ResumeBlog — Hugging Face Docker Space image
+# ResumeBlog — Docker image for the Render web service
 #
 # Multi-stage: uv resolves the locked environment in the builder; the
 # runtime stage carries only the venv and the app code.
-# HF Spaces constraints honoured: port 7860, non-root UID 1000 with a
-# writable HOME, XSRF/CORS disabled so Streamlit renders in the HF iframe.
+# Runs on port 7860 (routed by Render via PORT in render.yaml) as non-root
+# UID 1000 with a writable HOME; XSRF/CORS are disabled.
 
 FROM python:3.13-slim AS builder
 
@@ -24,8 +24,8 @@ RUN uv sync --frozen --no-dev
 
 FROM python:3.13-slim
 
-# HF Spaces runs containers as user 1000; create it explicitly so
-# local `docker run` behaves identically.
+# Run as a dedicated non-root user 1000; created explicitly so local
+# `docker run` behaves identically to the deployed container.
 RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user \
